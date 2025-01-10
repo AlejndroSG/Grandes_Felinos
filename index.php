@@ -4,113 +4,57 @@
     $contenido_head = str_replace('{{titulo}}', $titulo, $contenido_head);
     echo $contenido_head;
 ?>
-<body>
+<body id="principal">
     <?php require_once('header.html'); ?>
     <main id="inicio" class="oscuridad">
-        <div class="container">
+        <section class="container-fluid">
             <div class="row">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="col text-center py-5 text-white">
+                    <h1>Grandes Felinos</h1>
+                    <p>El Documental</p>
+                    <a href="./galeria.php" class="btn btn-primary">Galeria</a>
+                    <a href="./equipo.php" class="btn btn-primary">Equipo</a>
+                    <a href="./contacto.php" class="btn btn-primary">Contacto</a>
+                    <a href="./nosotros.php" class="btn btn-primary">Nosotros</a>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col text-center py-5 text-white">
+                    <h1>Grandes Felinos</h1>
+                    <p>El Documental</p>
+                    <a href="./galeria.php" class="btn btn-primary">Galeria</a>
+                    <a href="./equipo.php" class="btn btn-primary">Equipo</a>
+                    <a href="./contacto.php" class="btn btn-primary">Contacto</a>
+                    <a href="./nosotros.php" class="btn btn-primary">Nosotros</a>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col text-center py-5 text-white">
+                    <h1>Grandes Felinos</h1>
+                    <p>El Documental</p>
+                    <a href="./galeria.php" class="btn btn-primary">Galeria</a>
+                    <a href="./equipo.php" class="btn btn-primary">Equipo</a>
+                    <a href="./contacto.php" class="btn btn-primary">Contacto</a>
+                    <a href="./nosotros.php" class="btn btn-primary">Nosotros</a>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col text-center py-5 text-white">
+                    <h1>Grandes Felinos</h1>
+                    <p>El Documental</p>
+                    <a href="./galeria.php" class="btn btn-primary">Galeria</a>
+                    <a href="./equipo.php" class="btn btn-primary">Equipo</a>
+                    <a href="./contacto.php" class="btn btn-primary">Contacto</a>
+                    <a href="./nosotros.php" class="btn btn-primary">Nosotros</a>
+                </div>
+            </div>
+        </section>
     </main>
     <?php
         include('footer.html');
