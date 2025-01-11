@@ -28,6 +28,10 @@ header{
     .nav-link, .nav-item{
         color: white !important;
     }
+
+    img{
+        width: 200px;
+    }
 }
 
 body{
@@ -43,13 +47,13 @@ body{
     animation: desplazar 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 1s, ampliarCaja 2s ease-in-out forwards 3s;
 
     & section{
-        /* height: 100vh; */
-        /* display: flex;
+        height: 100vh;
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; */
-        /* background-size: cover; */
-        background-position: 0 0;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
