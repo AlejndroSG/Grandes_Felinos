@@ -6,7 +6,7 @@
 ?>
 <body id="principal">
     <?php require_once('header.html'); ?>
-    <main id="inicio" class="oscuridad">
+    <main class="oscuridad">
         <section class="container-fluid">
             <div class="row">
                 <div class="col text-center py-5 text-white">
