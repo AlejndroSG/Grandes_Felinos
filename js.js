@@ -18,17 +18,71 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 5500);
 
 })
-// Smooth scroll to next section
-document.addEventListener('wheel', (event) => {
-    const delta = event.deltaY;
-    const sections = document.querySelectorAll('section');
-    const currentSection = Math.round(window.scrollY / window.innerHeight);
 
-    if (delta > 0 && currentSection < sections.length - 1) {
-        sections[currentSection + 1].scrollIntoView({ behavior: 'smooth' });
-    } else if (delta < 0 && currentSection > 0) {
-        sections[currentSection - 1].scrollIntoView({ behavior: 'smooth' });
+const sections = document.querySelectorAll('main.oscuridad > section'); // Todas las secciones
+let isScrolling = false; // Control de animación
+let currentSectionIndex = 0; // Índice de la sección actual
+
+// Función personalizada para desplazamiento suave
+function smoothScrollTo(targetPosition, duration) {
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
+    const startTime = performance.now();
+
+    function animationStep(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1); // Progresión entre 0 y 1
+
+        // Función de aceleración/desaceleración (easeInOutQuad)
+        const easeInOutQuad = progress < 0.5
+            ? 2 * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+        window.scrollTo(0, startPosition + distance * easeInOutQuad);
+
+        if (progress < 1) {
+            requestAnimationFrame(animationStep);
+        } else {
+            isScrolling = false; // Permitir nuevos eventos de scroll
+        }
     }
 
-    event.preventDefault();
-}, { passive: false });
+    requestAnimationFrame(animationStep);
+}
+
+// Función para desplazarse a una sección
+function scrollToSection(index) {
+    if (index >= 0 && index < sections.length) {
+        isScrolling = true; // Bloquear scroll manual
+        const targetPosition = sections[index].offsetTop; // Posición de la sección
+        smoothScrollTo(targetPosition, 1000); // Duración de 1 segundo
+    }
+}
+
+// Manejo del evento de scroll del usuario
+document.addEventListener('wheel', (event) => {
+    if (isScrolling) return;
+
+    const delta = event.deltaY;
+    if (delta > 0 && currentSectionIndex < sections.length - 1) {
+        currentSectionIndex++;
+        scrollToSection(currentSectionIndex);
+    } else if (delta < 0 && currentSectionIndex > 0) {
+        currentSectionIndex--;
+        scrollToSection(currentSectionIndex);
+    }
+});
+
+// Manejo del evento de teclado
+document.addEventListener('keydown', (event) => {
+    if (isScrolling) return;
+
+    if (event.key === 'ArrowDown' && currentSectionIndex < sections.length - 1) {
+        currentSectionIndex++;
+        scrollToSection(currentSectionIndex);
+    } else if (event.key === 'ArrowUp' && currentSectionIndex > 0) {
+        currentSectionIndex--;
+        scrollToSection(currentSectionIndex);
+    }
+});
+
