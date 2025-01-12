@@ -12,10 +12,6 @@
                 <div class="col text-center py-5 text-white">
                     <h1>Grandes Felinos</h1>
                     <p>El Documental</p>
-                    <a href="./galeria.php" class="btn btn-primary">Galeria</a>
-                    <a href="./equipo.php" class="btn btn-primary">Equipo</a>
-                    <a href="./contacto.php" class="btn btn-primary">Contacto</a>
-                    <a href="./nosotros.php" class="btn btn-primary">Nosotros</a>
                 </div>
             </div>
         </section>

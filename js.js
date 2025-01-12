@@ -16,4 +16,19 @@ document.addEventListener("DOMContentLoaded", () => {
         bodyInicio.style.overflow = "auto";
         mainInicio.style.height = "auto";
     }, 5500);
+
 })
+// Smooth scroll to next section
+document.addEventListener('wheel', (event) => {
+    const delta = event.deltaY;
+    const sections = document.querySelectorAll('section');
+    const currentSection = Math.round(window.scrollY / window.innerHeight);
+
+    if (delta > 0 && currentSection < sections.length - 1) {
+        sections[currentSection + 1].scrollIntoView({ behavior: 'smooth' });
+    } else if (delta < 0 && currentSection > 0) {
+        sections[currentSection - 1].scrollIntoView({ behavior: 'smooth' });
+    }
+
+    event.preventDefault();
+}, { passive: false });
