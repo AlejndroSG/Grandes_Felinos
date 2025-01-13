@@ -12,18 +12,15 @@
                 <div class="col text-center py-5 text-white">
                     <h1>Grandes Felinos</h1>
                     <p>El Documental</p>
+                    <p>Un viaje fascinante a la vida de los depredadores más majestuosos de nuestro planeta.</p>
                 </div>
             </div>
         </section>
         <section class="container-fluid">
             <div class="row">
                 <div class="col text-center py-5 text-white">
-                    <h1>Grandes Felinos</h1>
-                    <p>El Documental</p>
-                    <a href="./galeria.php" class="btn btn-primary">Galeria</a>
-                    <a href="./equipo.php" class="btn btn-primary">Equipo</a>
-                    <a href="./contacto.php" class="btn btn-primary">Contacto</a>
-                    <a href="./nosotros.php" class="btn btn-primary">Nosotros</a>
+                    <h2>Grandes Felinos</h1>
+                    <p>Este documental muestra la vida de los grandes felinos en su estado más puro: desde su instinto cazador hasta su lucha por la supervivencia.</p>
                 </div>
             </div>
         </section>

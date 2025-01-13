@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 *{
     margin: 0%;
@@ -33,6 +34,13 @@ header{
 
 body{
     overflow: hidden;
+    font-family: "Lora";
+}
+
+p {
+    font-family: "Lora";
+    font-weight: 900;
+    font-size: 50px;
 }
 
 .oscuridad{
@@ -54,26 +62,34 @@ body{
         background-repeat: no-repeat;
         background-attachment: fixed;
         /* transition: all 1s ease-in-out; */
-
-        h1{
-            font-family: "Montserrat";
-            font-weight: 900;
-            font-size: 100px;            
-        }
     }
     & section+section{
         margin-top: 200px;
+        & p{
+            font-family: "Lora";
+            font-weight: 900;
+            font-size: 25px;
+        }
     }
     & > section:first-child{
         background-image: url(./fotos/Inicio/img1.jpg);
-        h1, p{
-            text-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+        h1{
+            font-weight: 900;
+            font-size: 100px;
+        }
+        h1, p:nth-child(2){
+            font-family: "Montserrat";
             color: beige;
         }
-        p{
-            font-family: "Montserrat";
+        p:nth-of-type(2){
             font-weight: 900;
-            font-size: 50px;
+            font-size: 35px;
+        }
+        p:last-child{
+            font-weight: 900;
+            font-size: 25px;
+            color: rgb(255, 170, 67);
         }
     }
     & > section:nth-child(2){
