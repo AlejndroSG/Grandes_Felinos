@@ -52,7 +52,7 @@ p {
     animation: desplazar 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 1s, ampliarCaja 2s ease-in-out forwards 3s;
 
     & section{
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -61,7 +61,6 @@ p {
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        /* transition: all 1s ease-in-out; */
     }
     & section+section{
         margin-top: 200px;
@@ -125,3 +124,209 @@ p {
         scale: 1;
     }
 }
+
+
+.timeline {
+    background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+  }
+  
+  .timeline .timeline-item {
+    position: relative;
+  }
+  
+  .timeline .timeline-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    height: 160px;
+  }
+  
+  .timeline .timeline-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #f0c419; /* Dorado */
+  }
+  
+  .timeline .timeline-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    /* background: rgba(255, 255, 255, 0.3); */
+    z-index: 0;
+  }
+
+  .cta {
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro para contraste */
+    color: #fff;
+    padding: 2rem 0;
+  }
+  
+  .cta-title {
+    font-size: 2rem;
+    color: #f0c419; /* Color dorado para destacar el título */
+    font-weight: 700;
+  }
+  
+  .cta-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-primary {
+    background-color: #f0c419; /* Color dorado del botón */
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    padding: 0.8rem 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #d1a70b;
+    color: #fff;
+  }
+
+  .explora-mas-section {
+    background: url('./fotos/Inicio/jaguar-rio.jpg') center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .explora-text {
+    z-index: 10;
+    max-width: 600px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido */
+    border-radius: 15px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  .explora-title {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #f0c419; /* Dorado */
+    font-family: 'Lora', serif;
+    font-weight: 700;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .image-item {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+    &:nth-child(1) {
+        background-image: url('./fotos/Inicio/img7.jpg');
+    }
+    &:nth-child(2) {
+        background-image: url('./fotos/Inicio/img7.jpg');
+    }
+    &:nth-child(3) {
+        background-image: url('./fotos/Inicio/img7.jpg');
+    }
+    &:nth-child(4) {
+        background-image: url('./fotos/Inicio/img7.jpg');  
+    }
+
+  }
+  
+  .image-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .icon-link {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .icon-link:hover {
+    color: #f0c419; /* Dorado */
+  }
+  
+  /* Animación Fade-in */
+  @media (max-width: 768px) {
+    .oscuridad {
+        & > section:first-child {
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .explora-title {
+      font-size: 1.5rem;
+    }
+  
+    .image-grid {
+      grid-gap: 0.5rem;
+    }
+  
+    .icon-link {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .explora-title {
+      font-size: 1.2rem;
+    }
+  
+    .social-icons {
+      gap: 0.5rem;
+    }
+  }
+  
+  /* Animación Fade-in */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
