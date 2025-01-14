@@ -7,7 +7,15 @@
 <body>
     <?php require_once('header.html'); ?>
     <main>
-
+        <section class="container-fluid" id="bannerPuma">
+            <div class="row">
+                <div class="col-md-8 text-center py-5 text-white">
+                    <h1>El Guardian Silencioso de las Montañas</h1>
+                    <h2>Puma</h2>
+                    <p>Un viaje fascinante a la vida de los depredadores más majestuosos de nuestro planeta.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <?php
         include('footer.html');

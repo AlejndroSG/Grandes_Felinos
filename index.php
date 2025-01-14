@@ -82,7 +82,7 @@
                         <p class="cta-text mb-4">
                         50% de los hábitats de grandes felinos se han perdido en el último siglo.
                         </p>
-                        <p class="cta-text mb-4">50% de los hábitats de grandes felinos se han perdido en el último siglo.</p>
+                        <p class="cta-text mb-4">Menos del 7% de los leopardos persas sobreviven en estado salvaje.</p>
                     </div>
                 </div>
                 <div id="cta-section" class="cta py-5 text-center col-md-6">

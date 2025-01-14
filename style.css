@@ -32,15 +32,26 @@ header{
     }
 }
 
-body{
+body#principal{
     overflow: hidden;
+    background-color: white;
+}
+  
+html body{
     font-family: "Lora";
+    background-color: #000;
 }
 
 p {
     font-family: "Lora";
     font-weight: 900;
-    font-size: 50px;
+}
+
+h1{
+  font-weight: 900 !important;
+  font-size: 100px !important;
+  font-family: "Montserrat" !important;
+  color: beige !important;
 }
 
 .oscuridad{
@@ -73,17 +84,13 @@ p {
     & > section:first-child{
         background-image: url(./fotos/Inicio/img1.jpg);
         text-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
-        h1{
-            font-weight: 900;
-            font-size: 100px;
-        }
         h1, p:nth-child(2){
             font-family: "Montserrat";
             color: beige;
         }
-        p:nth-of-type(2){
+        p:nth-child(2){
             font-weight: 900;
-            font-size: 35px;
+            font-size: 50px;
         }
         p:last-child{
             font-weight: 900;
@@ -145,13 +152,13 @@ p {
   }
   
   .timeline .timeline-title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-top: 1rem;
     color: #f0c419; /* Dorado */
   }
   
   .timeline .timeline-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.6;
   }
   
@@ -248,16 +255,16 @@ p {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 
     &:nth-child(1) {
-        background-image: url('./fotos/Inicio/img7.jpg');
+        background-image: url('./fotos/Inicio/img8.jpg');
     }
     &:nth-child(2) {
-        background-image: url('./fotos/Inicio/img7.jpg');
+        background-image: url('./fotos/Inicio/img9.jpg');
     }
     &:nth-child(3) {
-        background-image: url('./fotos/Inicio/img7.jpg');
+        background-image: url('./fotos/Inicio/img10.jpg');
     }
     &:nth-child(4) {
-        background-image: url('./fotos/Inicio/img7.jpg');  
+        background-image: url('./fotos/Inicio/img11.jpg');  
     }
 
   }
@@ -281,6 +288,34 @@ p {
   .icon-link:hover {
     color: #f0c419; /* Dorado */
   }
+  
+  #bannerPuma{
+    background-image: url('./fotos/Puma/Puma.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  
+    .row{
+      justify-content: center;
+
+      h1, h2{
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+      }
+      h2{
+        font-size: 50px;
+        font-family: "Montserrat";
+        color: #f0a519;
+      }
+    }
+  }
+
+
+
+
   
   /* Animación Fade-in */
   @media (max-width: 768px) {
