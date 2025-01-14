@@ -22,6 +22,7 @@ header{
     width: 100%;
     position: fixed;
     z-index: 999;
+    background-color: rgba(255, 255, 255, 0.07);
     
     .nav-link, .nav-item{
         color: white !important;
@@ -52,6 +53,11 @@ h1{
   font-size: 100px !important;
   font-family: "Montserrat" !important;
   color: beige !important;
+}
+h2{
+  font-size: 60px;
+  font-family: "Montserrat";
+  color: #f0a519 !important;
 }
 
 .oscuridad{
@@ -183,6 +189,10 @@ h1{
     font-size: 2rem;
     color: #f0c419; /* Color dorado para destacar el título */
     font-weight: 700;
+
+    h2{
+      font-size: 50px;
+    }
   }
   
   .cta-text {
@@ -306,13 +316,40 @@ h1{
         text-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
       }
       h2{
-        font-size: 50px;
-        font-family: "Montserrat";
-        color: #f0a519;
+        font-size: 60px;
+        font-weight:bold;
+      }
+      button{
+        background-color: #f0a519;
+        
       }
     }
   }
 
+  #importanciaPuma{
+    background-image: url('./fotos/Puma/Puma2.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    .card{
+      background-color: rgba(0, 0, 0, 0.3);
+      /* width: 50%; */
+      margin: auto;
+      color: white;
+
+      h2{
+        font-size: 60px;
+        font-weight:bold;
+      }
+    }
+  }
 
 
 

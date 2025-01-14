@@ -11,8 +11,30 @@
             <div class="row">
                 <div class="col-md-8 text-center py-5 text-white">
                     <h1>El Guardian Silencioso de las Montañas</h1>
-                    <h2>Puma</h2>
-                    <p>Un viaje fascinante a la vida de los depredadores más majestuosos de nuestro planeta.</p>
+                    <h2 class="my-4">Puma</h2>
+                    <a class="btn" href="#importanciaPuma">Explorar Más</a>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid" id="importanciaPuma">
+            <div class="row"></div>
+                <div class="col-md-6 text-center py-5 text-white">
+                    <div class="card p-5">
+                        <div class="card-header">
+                            <h2>La importancia del Puma</h2>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">El puma es más que un depredador; es un regulador natural que mantiene el equilibrio en su ecosistema.</h5>
+                            <p class="card-text">
+                                <ul class="list-group text-center py-3">
+                                    <li class="list-group-item">Controla poblaciones de hervívoros</li>
+                                    <li class="list-group-item">Prevee la sobreexplotación de recursos vegetales</li>
+                                    <li class="list-group-item">Tiene un papel crucial en la biodiversidad</li>
+                                </ul>
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
