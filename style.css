@@ -299,6 +299,10 @@ h2{
     color: #f0c419; /* Dorado */
   }
   
+  section+section{
+    margin-top: 20px;
+  }
+
   #bannerPuma{
     background-image: url('./fotos/Puma/Puma.png');
     background-size: cover;
@@ -349,6 +353,47 @@ h2{
         font-weight:bold;
       }
     }
+  }
+
+  #sonidosPuma{
+    padding: 50px 0;
+    align-content: center;
+    background-color: rgba(189, 117, 64, 1);
+    min-height: 50vh;
+
+    h2{
+      font-size: 40px;
+      font-weight:bold;
+    }
+
+    .card{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.096);
+      border: none;
+    }
+
+    .row div+div .card-body{
+      min-height: 30vh;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+
+      h5{
+        font-size: 25px;
+        font-weight:bold;
+      }
+    }
+  }
+
+  #datosCuriosos{
+    background: url('./fotos/Puma/Puma3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center; */
   }
 
 
