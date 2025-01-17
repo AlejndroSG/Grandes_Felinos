@@ -8,7 +8,7 @@
     <?php require_once('header.html'); ?>
     <main>
         <section class="container-fluid banner" id="bannerGuepardo">
-            <div class="row">
+            <div class="row w-100">
                 <div class="col-md-8 text-center py-5 text-white">
                     <h1>El mejor velocista de los mamiferos</h1>
                     <h2 class="my-4">Guepardo</h2>
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid px-5" id="sonidosPuma">
+        <section class="container-fluid px-5 sonidos" id="sonidosGuepardo">
             <div class="row">
                 <div class="col-12 mb-5 fs-5">
                     <h2 class="text-center">Sonidos del Guepardo</h2>

@@ -335,6 +335,9 @@ h2{
   #bannerGuepardo{
     background-image: url('./fotos/Guepardo/photo-1551969014-7d2c4cddf0b6.jpg');
   }
+  #bannerleopardoNieves{
+    background-image: url('./fotos/leopardoNieves/leopardo1.jpg');
+  }
 
   .importancia{
     background-size: cover;
@@ -366,11 +369,13 @@ h2{
   #importanciaGuepardo{
     background-image: url('./fotos/Guepardo/guepardo2.jpg');
   }
+  #importanciaLeopardoNieves{
+    background-image: url('./fotos/leopardoNieves/leopardo2.jpg');
+  }
 
-  #sonidosPuma{
+  .sonidos{
     padding: 50px 0;
     align-content: center;
-    background-color: rgb(167, 154, 53);
     min-height: 50vh;
 
     h2{
@@ -396,11 +401,25 @@ h2{
       }
     }
   }
+
+  #sonidosPuma{
+    background-color: rgba(146, 202, 63, 0.673);
+  }
+  #sonidosGuepardo{
+    background-color: rgb(167, 154, 53);
+  }
+  #sonidosLeopardo{
+    background-color: #cfd2d6;
+  }
+
   #datosPuma{
     background: url('./fotos/Puma/Puma3.jpg');
   }
   #datosGuepardo{
     background: url('./fotos/Guepardo/guepardo3.png');
+  }
+  #datosLeopardo{
+    background: url('./fotos/leopardoNieves/leopardo3.jpg');
   }
 
   .datos{
@@ -450,6 +469,18 @@ h2{
 
 
   
+  footer{
+    background-color: rgba(0, 0, 0, 1);
+    .row{
+      color: white;
+      padding: 0 100px;
+
+      li a{
+        color: white;
+      }
+    }
+  }
+
   /* Animación Fade-in */
   @media (max-width: 768px) {
     .oscuridad {
