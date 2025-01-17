@@ -303,8 +303,7 @@ h2{
     margin-top: 20px;
   }
 
-  #bannerPuma{
-    background-image: url('./fotos/Puma/Puma.png');
+  .banner{
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -330,8 +329,14 @@ h2{
     }
   }
 
-  #importanciaPuma{
-    background-image: url('./fotos/Puma/Puma2.jpg');
+  #bannerPuma{
+    background-image: url('./fotos/Puma/Puma.png');
+  }
+  #bannerGuepardo{
+    background-image: url('./fotos/Guepardo/photo-1551969014-7d2c4cddf0b6.jpg');
+  }
+
+  .importancia{
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -343,7 +348,7 @@ h2{
     margin-top: 20px;
 
     .card{
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.5);
       /* width: 50%; */
       margin: auto;
       color: white;
@@ -355,10 +360,17 @@ h2{
     }
   }
 
+  #importanciaPuma{
+    background-image: url('./fotos/Puma/Puma2.jpg');
+  }
+  #importanciaGuepardo{
+    background-image: url('./fotos/Guepardo/guepardo2.jpg');
+  }
+
   #sonidosPuma{
     padding: 50px 0;
     align-content: center;
-    background-color: rgba(189, 117, 64, 1);
+    background-color: rgb(167, 154, 53);
     min-height: 50vh;
 
     h2{
@@ -384,16 +396,55 @@ h2{
       }
     }
   }
-
-  #datosCuriosos{
+  #datosPuma{
     background: url('./fotos/Puma/Puma3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  }
+  #datosGuepardo{
+    background: url('./fotos/Guepardo/guepardo3.png');
+  }
+
+  .datos{
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
     height: 100vh;
-    /* display: flex; */
-    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+
+    h2{
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    #accordionExample{
+      /* color: white; */
+      /* background-color: rgba(0, 0, 0, 0.3); */
+      .accordion-item{
+        background-color: rgba(0, 0, 0, 0.400)  ;
+        color: white;
+        .accordion-button{
+          background-color: rgba(0, 0, 0, 0.4)  ;
+          color: white;
+        }
+      }
+    }
+  }
+
+
+  #videoPuma{
+    height: 100vh;
+    position: relative;
+
+    iframe{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* z-index: -1; */
+    }
   }
 
 
