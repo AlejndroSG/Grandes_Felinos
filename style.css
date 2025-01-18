@@ -21,6 +21,7 @@ html {
 header{
     width: 100%;
     position: fixed;
+    top: 0;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.07);
     
@@ -35,7 +36,22 @@ header{
 
 body#principal{
     overflow: hidden;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
+}
+body#team{
+  /* background-color: #f4bd56; */
+  background-color: white;
+
+  header{
+    background-color: rgba(0, 0, 0, 0.389);
+    position: sticky;
+    top: 0;
+  }
+
+  section{
+    min-height: 50vh;
+    align-content: center;
+  }
 }
   
 html body{
@@ -338,6 +354,9 @@ h2{
   #bannerleopardoNieves{
     background-image: url('./fotos/leopardoNieves/leopardo1.jpg');
   }
+  section#bannerEquipo.container{
+    background-color: #f4bd56;
+  }
 
   .importancia{
     background-size: cover;
@@ -465,6 +484,94 @@ h2{
       /* z-index: -1; */
     }
   }
+
+  #introduccion-equipo img {
+    border: 5px solid #f4bd56;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#miembros-equipo h1 {
+    color: #f4bd56 !important;
+}
+
+#miembros-equipo .col-md-4{
+    padding: 25px;
+    border: 1px solid #ddd;
+    /* margin-top: 10px ; */
+}
+
+/* Miembros del Equipo */
+#miembros-equipo img {
+    border: 3px solid #f4bd56;
+    transition: transform 0.3s ease-in-out;
+}
+
+#miembros-equipo img:hover {
+    transform: scale(1.1);
+}
+
+#miembros-equipo .card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Nuestro Proceso */
+#proceso-trabajo .card {
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#proceso-trabajo .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#proceso-trabajo h5 {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+/* Logros y Reconocimientos */
+#logros-reconocimientos .card {
+    border: 2px solid #007bff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+#logros-reconocimientos .card:hover {
+    background: #007bff;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+#unete-iniciativas {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: #fff;
+  text-align: center;
+}
+
+#unete-iniciativas h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#unete-iniciativas p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+#unete-iniciativas .btn {
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#unete-iniciativas .btn:hover {
+  background-color: #003d80;
+  transform: scale(1.05);
+}
 
 
 

@@ -13,11 +13,25 @@ document.addEventListener("DOMContentLoaded", () => {
         headerInicio.style.opacity = "1";
         headerInicio.style.background = "rgba(255, 255, 255, 0.07)";
         footerInicio.style.opacity = "1";
-        bodyInicio.style.overflow = "auto";
+        bodyInicio.style.overflowY = "auto";
+        bodyInicio.style.overflowX = "hidden";
+
         mainInicio.style.height = "auto";
     }, 5500);
 
+    $(".contenido div").hide();
+    $(".contenido div").eq(0).show();
+        $(".botones button").on("click", function(e){
+            indice = $(this).index();
+            console.log((indice));
+            $(".contenido div").hide()
+            mostrar();
+        })
 })
+
+function mostrar(){
+    $(".contenido div").eq(indice).show();
+}
 
 const sections = document.querySelectorAll('main.oscuridad > section'); // Todas las secciones
 let isScrolling = false; // Control de animación
