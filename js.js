@@ -21,7 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     $(".contenido div").hide();
     $(".contenido div").eq(0).show();
+    $(".botones button").eq(0).css({
+        "background-color": "#f4bd56",
+    })
         $(".botones button").on("click", function(e){
+            $(".botones button").css({
+                "background-color": "#f4bd5670",
+            })
+            $(this).css({
+                "background-color": "#f4bd56",
+            })
             indice = $(this).index();
             console.log((indice));
             $(".contenido div").hide()

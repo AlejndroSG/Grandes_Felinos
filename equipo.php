@@ -58,28 +58,32 @@
                     <p class="fs-5">Desde la idea inicial hasta el resultado final, trabajamos de manera colaborativa y estratégica para alcanzar nuestros objetivos.</p>
                     <div class="row g-4 text-center mt-4">
                         <div class="col-md-9 contenido">
-                            <div class="card p-3 h-100">
-                                <h5>1. Idea</h5>
-                                <p>Exploramos conceptos innovadores.</p>
+                            <div class="card p-3 h-100 p-5">
+                                <h5>Investigación y Análisis</h5>
+                                <p>Comenzamos con una investigación exhaustiva sobre el estado actual de las especies de grandes felinos, sus hábitats y las amenazas que enfrentan. Analizamos datos científicos y colaboramos con expertos para tomar decisiones informadas.</p>
+                                <img src="./fotos/equipo/investigacion.jpg" alt="">
                             </div>
-                            <div class="card p-3 h-100">
-                                <h5>2. Planificación</h5>
-                                <p>Definimos objetivos claros y estrategias.</p>
+                            <div class="card p-3 h-100 p-5">
+                                <h5>Planificación Estratégica</h5>
+                                <p>Diseñamos iniciativas prácticas y escalables para abordar los problemas identificados. Esto incluye estrategias de conservación, sensibilización pública y colaboración con comunidades locales.</p>
+                                <img src="./fotos/equipo/estrategia.png" alt="">
                             </div>
-                            <div class="card p-3 h-100">
-                                <h5>3. Desarrollo</h5>
-                                <p>Damos vida a las ideas con creatividad.</p>
+                            <div class="card p-3 h-100 p-5">
+                                <h5>Implementación en Terreno</h5>
+                                <p>Nuestro equipo ejecuta las estrategias directamente en los ecosistemas de los grandes felinos. Esto incluye actividades como reforestación, creación de corredores ecológicos y rescate de animales en peligro.</p>
+                                <img src="./fotos/equipo/terreno.jpg" alt="">
                             </div>
-                            <div class="card p-3 h-100">
-                                <h5>4. Resultados</h5>
-                                <p>Entregamos proyectos que superan expectativas.</p>
+                            <div class="card p-3 h-100 p-5">
+                                <h5>Monitoreo y Divulgación</h5>
+                                <p>Evaluamos el impacto de nuestras acciones mediante monitoreo constante y compartimos los resultados con la comunidad global. Informar a los colaboradores y al público asegura transparencia y refuerza el apoyo.</p>
+                                <img src="./fotos/equipo/monitoreo.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-md-3 botones">
-                            <button class="active text-white bg-primary w-100 my-4" >1. Idea</button>
-                            <button class="active text-white bg-primary w-100 my-4">2. Planificación</button>
-                            <button class="active text-white bg-primary w-100 my-4">3. Desarrollo</button>
-                            <button class="active text-white bg-primary w-100 my-4">4. Resultados</button>
+                            <button class="active text-white my-4" >1</button>
+                            <button class="active text-white my-4">2</button>
+                            <button class="active text-white my-4">3</button>
+                            <button class="active text-white my-4">4</button>
                         </div>
                     </div>
                 </div>
