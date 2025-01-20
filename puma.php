@@ -17,9 +17,9 @@
             </div>
         </section>
         <section class="container-fluid importancia" id="importanciaPuma">
-            <div class="row"></div>
-                <div class="col-md-6 text-center py-5 text-white">
-                    <div class="card p-5">
+            <div class="row">
+                <div class="col text-center py-5 text-white">
+                    <div class="card p-3">
                         <div class="card-header">
                             <h2>La importancia del Puma</h2>
                         </div>

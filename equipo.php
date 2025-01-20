@@ -13,39 +13,39 @@
             <div class="row g-4">
                 <div class="col-md-4 text-center">
                     <img src="./fotos/equipo/1.jpg" class="rounded-circle mb-3" alt="Miembro 1">
-                    <h5>Nombre 1</h5>
+                    <h5>Rachid Piñero</h5>
                     <p class="text-muted">Diseñador Web</p>
                     <p>"Apasionado por crear experiencias visuales únicas."</p>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="./fotos/equipo/2.jpg" class="rounded-circle mb-3" alt="Miembro 2">
-                    <h5>Nombre 2</h5>
-                    <p class="text-muted">Desarrollador</p>
+                    <h5>Maria Pino</h5>
+                    <p class="text-muted">Desarrolladora</p>
                     <p>"Convirtiendo ideas en soluciones funcionales."</p>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="./fotos/equipo/3.jpg" class="rounded-circle mb-3" alt="Miembro 3">
-                    <h5>Nombre 3</h5>
+                    <h5>Cesar Olivera</h5>
                     <p class="text-muted">Gerente de Proyecto</p>
                     <p>"Liderando proyectos con pasión y eficacia."</p>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="./fotos/equipo/4.jpg" class="rounded-circle mb-3" alt="Miembro 1">
-                    <h5>Nombre 1</h5>
-                    <p class="text-muted">Diseñador Web</p>
-                    <p>"Apasionado por crear experiencias visuales únicas."</p>
+                    <h5>Anais Verdu</h5>
+                    <p class="text-muted">Artista Digital</p>
+                    <p>"Convirtiendo ideas en visuales impactantes."</p>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="./fotos/equipo/5.jpg" class="rounded-circle mb-3" alt="Miembro 2">
-                    <h5>Nombre 2</h5>
-                    <p class="text-muted">Desarrollador</p>
-                    <p>"Convirtiendo ideas en soluciones funcionales."</p>
+                    <h5>Lorenzo Castañeda</h5>
+                    <p class="text-muted">Fotógrafo</p>
+                    <p>"Capturando momentos extraordinarios."</p>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="./fotos/equipo/6.jpg" class="rounded-circle mb-3" alt="Miembro 3">
-                    <h5>Nombre 3</h5>
-                    <p class="text-muted">Gerente de Proyecto</p>
-                    <p>"Liderando proyectos con pasión y eficacia."</p>
+                    <h5>Cristian San-Jose</h5>
+                    <p class="text-muted">Coordinador de equipo de grabación</p>
+                    <p>"Trabajando en equipo para crear contenido impactante."</p>
                 </div>
             </div>
         </section>
@@ -120,7 +120,7 @@
                 <div class="col-md-8">
                     <h2 class="mb-4">Únete a nuestras iniciativas</h2>
                     <p class="fs-5 mb-4">Para proteger a los grandes felinos y su hábitat. Cada aporte cuenta para preservar su futuro.</p>
-                    <a href="#contacto" class="btn btn-primary btn-lg">Contribuir Ahora</a>
+                    <a href="./asociacion.php" class="btn btn-primary btn-lg">Contribuir Ahora</a>
                 </div>
             </div>
         </section>

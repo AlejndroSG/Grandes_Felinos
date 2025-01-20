@@ -53,6 +53,19 @@ body#team{
     align-content: center;
   }
 }
+body#asociacion{
+  background: url('./fotos/asociacion/fondo_asociacion.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+
+  section+section{
+    background-color: #0000004c !important;
+    color: white;
+    margin: 0;
+  }
+}
   
 html body{
     font-family: "Lora";
@@ -354,6 +367,10 @@ h2{
   #bannerleopardoNieves{
     background-image: url('./fotos/leopardoNieves/leopardo1.jpg');
   }
+  #bannerAsociacion{
+    height: 100vh;
+  }
+
   section#bannerEquipo.container{
     background-color: #f4bd56;
   }
@@ -599,6 +616,11 @@ h2{
   transform: scale(1.05);
 }
 
+#donar form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 
 
   
@@ -606,7 +628,11 @@ h2{
     background-color: rgba(0, 0, 0, 1);
     .row{
       color: white;
-      padding: 0 100px;
+      /* padding: 0 100px; */
+
+      .col{
+        align-content: center;
+      }
 
       li a{
         color: white;
@@ -646,6 +672,18 @@ h2{
   }
   
   @media (max-width: 480px) {
+    header{
+      img{
+        width: 120px;
+      }
+    }
+    h1{
+      font-size: 50px !important;
+    }
+    h2{
+      font-size: 30px !important;
+    }
+
     .explora-title {
       font-size: 1.2rem;
     }
