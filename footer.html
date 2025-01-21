@@ -17,9 +17,22 @@
         <p>Recibe actualizaciones de nuestros proyectos.</p>
         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
           <input id="newsletter1" type="text" class="form-control" placeholder="Correo electrónico">
-          <button class="btn btn-primary" type="button">Subscribirse</button>
+          <button class="btn btn-primary" type="button" id="liveToastBtn">Subscribirse</button>
         </div>
       </form>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded me-2" alt="...">
+        <strong class="me-auto">!Muchas Gracias!</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Le llegará un correo en breves instantes.
+      </div>
     </div>
   </div>
 
